@@ -32,7 +32,7 @@ function preload() { //sounds to be played
 
 let rndm = random(sound)
 if (deviceShaken){
-
+  rndm.play();
 }
 
 
