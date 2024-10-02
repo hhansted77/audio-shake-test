@@ -4,18 +4,18 @@ let boxGray = 125;
 let value = 0;
 let threshold = 50;
 
-let first;
-let second;
-let third;
-let fourth;
+//let first;
+//let second;
+//let third;
+//let fourth;
 
 
-function preload() { //sounds to be played
-  first = loadSound("libraries/stop that.wav");
-  second = loadSound("libraries/stop it.wav");
-  third = loadSound("libraries/put me down.wav");
-  fourth = loadSound("libraries/nonono.wav");
-  }
+//function preload() { //sounds to be played
+  //first = loadSound("libraries/stop that.wav");
+  //second = loadSound("libraries/stop it.wav");
+  //third = loadSound("libraries/put me down.wav");
+  //fourth = loadSound("libraries/nonono.wav");
+  //}
   
   function setup() {
     fill(value);
