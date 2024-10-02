@@ -24,14 +24,15 @@ function preload() { //sounds to be played
     rectMode(CENTER);
   
     setShakeThreshold(threshold); 
-    noLoop();
+
   }
 
 
   function deviceShaken() {  //this is supposed to be the randomizer
 
 let rndm = random(sound)
-if (deviceShaken){
+
+if (setShakeThreshold > threshold){
   rndm.play();
 }
 
