@@ -32,9 +32,6 @@ function preload() { //sounds to be played
 
 let rndm = random(sound)
 
-
-
-
     //let rndm = random(1, 100);
     //if (rndm <= 25) {
       //first.play();
@@ -55,5 +52,5 @@ if (value > 255){
 
 function draw() {
   background(value);
-
+  rndm.play();
 }
