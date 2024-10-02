@@ -6,6 +6,7 @@ let first;
 let second;
 let third;
 let fourth;
+let sound = [];
 
 
 function preload() { //sounds to be played
@@ -13,6 +14,8 @@ function preload() { //sounds to be played
   second = loadSound("assets/stop-it.mp3");
   third = loadSound("assets/put-me-down.mp3");
   fourth = loadSound("assets/nonono.mp3");
+
+  sound = [first, second, third, fourth];
   }
   
   function setup() {
@@ -21,20 +24,27 @@ function preload() { //sounds to be played
     rectMode(CENTER);
   
     setShakeThreshold(threshold); 
+    noLoop();
   }
 
 
   function deviceShaken() {  //this is supposed to be the randomizer
-    let rndm = random(1, 100);
-    if (rndm <= 25) {
-      first.play();
-    } else if (26 <= rndm <= 50){
-      second.play();
-    } else if (51 <= rndm <= 75){
-      third.play();
-    }else {
-      fourth.play();
-    }  
+
+let rndm = random(sound){
+  rndm.play();
+}
+
+
+    //let rndm = random(1, 100);
+    //if (rndm <= 25) {
+      //first.play();
+    //} else if (26 <= rndm <= 50){
+      //second.play();
+    //} else if (51 <= rndm <= 75){
+      //third.play();
+    //}else {
+      //fourth.play();
+    //}  
 
 value = value + 5;
 if (value > 255){
