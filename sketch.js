@@ -30,9 +30,11 @@ function preload() { //sounds to be played
 
   function deviceShaken() {  //this is supposed to be the randomizer
 
-let rndm = random(sound){
-  rndm.play();
+let rndm = random(sound)
+if (deviceShaken){
+
 }
+
 
 
     //let rndm = random(1, 100);
