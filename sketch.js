@@ -1,31 +1,41 @@
 
 let value = 0;
-let threshold = 30;
 
 
-let sound = [];
-let totalSound = 4;
+let first;
+let second;
+let third;
+let fourth;
+
+let sound[];
 
 
 function preload() { //sounds to be played
-  for (let i = 0; i < 4; i++){
-    sound[i] = loadSound("assets/" + i + ".mp3");
+    first = loadSound("assets/0.mp3");
+    second = loadSound("assets/1.mp3");
+    third = loadSound("assets/2.mp3");
+    fourth = loadSound("assets/3.mp3");
+
+    sound = [first, second, third, fourth];
+ 
   }
-}
+
   
   function setup() {
     fill(value);
     createCanvas(400, 400);
     rectMode(CENTER);
   
-    setShakeThreshold(threshold); 
+    setShakeThreshold(50); 
 
   }
 
 
   function deviceShaken() {  
-let rndm; //= random(sound)//this is supposed to be the randomizer
+    let rndm = floor(random(sound.length))//this is supposed to be the randomizer
 
+//i dont know what if statement to get it to read the shake -> then random
+//rndm.play();
 
 
 
@@ -48,8 +58,14 @@ if (value > 255){
 
   }
 
+
+
+
+
 function draw() {
   background(value); //proves that shake function works because gradient changes
-rndm = int(random(0,4));
-sound[rndm].play();
+
+if(deviceShaken){
+  rndm.play();
+}
 }
