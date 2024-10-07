@@ -10,12 +10,12 @@ let fourth;
 
 
 function preload() { //sounds to be played
-    first = loadSound("assets/0.mp3");
-    second = loadSound("assets/1.mp3");
-    third = loadSound("assets/2.mp3");
-    fourth = loadSound("assets/3.mp3");
+    //first = loadSound("assets/0.mp3");
+    //second = loadSound("assets/1.mp3");
+    //third = loadSound("assets/2.mp3");
+    //fourth = loadSound("assets/3.mp3");
 
-   let sound = [first, second, third, fourth];
+   //let sound = [first, second, third, fourth];
  
   }
 
@@ -31,7 +31,7 @@ function preload() { //sounds to be played
 
 
   function deviceShaken() {  
-    let rndm = random(sound.length);//this is supposed to be the randomizer
+    //let rndm = random(sound.length);//this is supposed to be the randomizer
 
 //i dont know what if statement to get it to read the shake -> then random
 //rndm.play();
@@ -64,7 +64,13 @@ if (value > 255){
 function draw() {
   background(value); //proves that shake function works because gradient changes
 
-if(deviceShaken){
-  rndm.play();
+if (key == "x") {
+  fill("blue");
+  ellipse(200, 200, 30,);
 }
-}
+
+
+//if(deviceShaken){
+  //rndm.play();
+//}
+//}
