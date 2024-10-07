@@ -64,14 +64,16 @@ if (value > 255){
 function draw() {
   background(value); //proves that shake function works because gradient changes
 
+
 }
 
 function keyPressed(){
-  value = value + 5;
-if (value > 255){
-  value = 0;
+  if (key == " "){
+    value = value + 5;
+  }
 }
-}
+
+
 
 
 //if(deviceShaken){
