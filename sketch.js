@@ -63,9 +63,11 @@ if (value > 255){
 
 function draw() {
   background(value); //proves that shake function works because gradient changes
-if keyIsPressed() {
-  first.play();
+
 }
+
+function keyIsPressed(){
+  first.play();
 }
 
 
