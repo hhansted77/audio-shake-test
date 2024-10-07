@@ -7,7 +7,6 @@ let second;
 let third;
 let fourth;
 
-let sound[];
 
 
 function preload() { //sounds to be played
@@ -16,7 +15,7 @@ function preload() { //sounds to be played
     third = loadSound("assets/2.mp3");
     fourth = loadSound("assets/3.mp3");
 
-    sound = [first, second, third, fourth];
+   let sound = [first, second, third, fourth];
  
   }
 
@@ -32,7 +31,7 @@ function preload() { //sounds to be played
 
 
   function deviceShaken() {  
-    let rndm = floor(random(sound.length));//this is supposed to be the randomizer
+    let rndm = random(sound.length);//this is supposed to be the randomizer
 
 //i dont know what if statement to get it to read the shake -> then random
 //rndm.play();
