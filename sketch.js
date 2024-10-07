@@ -10,7 +10,7 @@ let fourth;
 
 
 function preload() { //sounds to be played
-    //first = loadSound("assets/0.mp3");
+    first = loadSound("assets/0.mp3");
     //second = loadSound("assets/1.mp3");
     //third = loadSound("assets/2.mp3");
     //fourth = loadSound("assets/3.mp3");
@@ -63,10 +63,9 @@ if (value > 255){
 
 function draw() {
   background(value); //proves that shake function works because gradient changes
-
-if (key == "x") {
-  fill("blue");
-  ellipse(200, 200, 30,);
+if keyIsPressed() {
+  first.play();
+}
 }
 
 
