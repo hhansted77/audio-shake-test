@@ -30,7 +30,7 @@ function preload() { //sounds to be played
   }
 
 
-  function deviceShaken() {  
+  //function deviceShaken() {  
     //let rndm = random(sound.length);//this is supposed to be the randomizer
 
 //i dont know what if statement to get it to read the shake -> then random
@@ -55,7 +55,7 @@ if (value > 255){
   value = 0;
 }
 
-  }
+  //}
 
 
 
@@ -67,9 +67,9 @@ function draw() {
 }
 
 function keyPressed(){
-  value = value - 5;
-if (value < 0){
-  value = 255;
+  value = value + 5;
+if (value > 255){
+  value = 0;
 }
 }
 
