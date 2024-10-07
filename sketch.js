@@ -66,8 +66,11 @@ function draw() {
 
 }
 
-function keyIsPressed(){
-  first.play();
+function keyPressed(){
+  value = value - 5;
+if (value < 0){
+  value = 255;
+}
 }
 
 
