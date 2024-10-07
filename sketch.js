@@ -32,7 +32,7 @@ function preload() { //sounds to be played
 
 
   function deviceShaken() {  
-    let rndm = floor(random(sound.length))//this is supposed to be the randomizer
+    let rndm = floor(random(sound.length));//this is supposed to be the randomizer
 
 //i dont know what if statement to get it to read the shake -> then random
 //rndm.play();
